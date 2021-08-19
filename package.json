@@ -1,0 +1,22 @@
+{
+  "name": "perforce_discord_webhook_module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Randolph William Aarseth II <randolph@divine.games>",
+  "license": "MIT",
+  "homepage": "https://github.com/MMOCreators/perforce_discord_bridge_module#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MMOCreators/perforce_discord_bridge_module.git"
+  },
+  "dependencies": {
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "node-fetch": "^2.6.1"
+  }
+}
