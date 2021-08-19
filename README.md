@@ -1,8 +1,17 @@
 # Perforce <-> Discord Module
+[![npm](https://img.shields.io/npm/l/perforce_discord_webhook_module.svg)](https://github.com/MMOCreators/perforce_discord_bridge/blob/master/LICENSE.md)
+[![npm](https://img.shields.io/npm/v/perforce_discord_webhook_module.svg)](https://img.shields.io/npm/v/perforce_discord_webhook_module.svg)
+
+
 This plugin allows you to make Queries against a Perforce Server, to check the newest edition and send a Webhook to Discord if it is newer then previously stored.
 
 ## Why this was Created?
 I am working on Developing a Game, and I really got annoyed there was nothing that would notify me from Perforce built-in. So made this.
+
+## How to Install
+```sh
+$ npm install --save perforce_discord_webhook_module
+```
 
 ## Requirements
 * `apt-get install --yes helix-cli` installed on a Linux Machine
