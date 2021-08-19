@@ -40,7 +40,7 @@ jobs:
         run: |
           git clone https://.:${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}@github.com/MMOCreators/perforce_discord_bridge
           cd perforce_discord_bridge
-          npm update
+          npx npm-check-updates -u
           git config --global user.name 'Bioblaze Payne'
           git config --global user.email 'bioblazepayne@gmail.com'
           git add .
