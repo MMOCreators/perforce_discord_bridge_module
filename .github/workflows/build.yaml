@@ -38,7 +38,7 @@ jobs:
       # Setup .npmrc file to publish to npm
       - name: Update Repo Dependencies
         run: |
-          git clone https://.:${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}@github.com/MMOCreators/perforce_discord_bridge_module
+          git clone https://.:${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}@github.com/MMOCreators/perforce_discord_bridge
           cd perforce_discord_bridge_module
           npm update
           git config --global user.name 'Bioblaze Payne'
