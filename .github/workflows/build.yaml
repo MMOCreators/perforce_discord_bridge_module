@@ -45,7 +45,7 @@ jobs:
           git config --global user.email 'bioblazepayne@gmail.com'
           git add .
           git diff-index --quiet HEAD || git commit -m "Automated package.json update from github.com/MMOCreators/perforce_discord_bridge_module"
-          git push target master
+          git push
 
 
 
