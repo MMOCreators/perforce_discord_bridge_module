@@ -4,8 +4,20 @@ on:
     branches:
       - 'master'
 jobs:
+  version:
+    runs-on: ubuntu-latest
+    if: "!startsWith(github.event.head_commit.message, '[RELEASE]')"
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+      - run: git config --global user.name 'Bioblaze Payne'
+      - run: git config --global user.email 'bioblazepayne@gmail.com'
+      - run: npm version patch -m "[RELEASE] %s"
+      - run: git push
   build:
     runs-on: ubuntu-latest
+    if: "startsWith(github.event.head_commit.message, '[RELEASE]')"
     steps:
       - uses: actions/checkout@v2
       # Setup .npmrc file to publish to npm
